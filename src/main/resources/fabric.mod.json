@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "savemypiglin",
+  "version": "${version}",
+  "name": "Savemypiglin",
+  "description": "Protect Entities from zombifying if in a Nether biome, regardless of the dimension they're in.",
+  "authors": [
+    "28Pollux28"
+  ],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/savemypiglin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "eu.pollux28.savemypiglin.Savemypiglin"
+    ]
+  },
+  "mixins": [
+    "savemypiglin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17"
+  }
+}
