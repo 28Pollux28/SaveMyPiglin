@@ -2,18 +2,27 @@
   "schemaVersion": 1,
   "id": "savemypiglin",
   "version": "${version}",
-  "name": "Savemypiglin",
-  "description": "Protect Entities from zombifying if in a Nether biome, regardless of the dimension they're in.",
+  "name": "Save My Piglin",
+  "description": "Protect Entities from zombifying when in nether biomes. Including API for customization",
   "authors": [
-    "28Pollux28"
+    {
+      "name": "28Pollux28",
+      "contact": {
+        "homepage": "https://github.com/28Pollux28"
+      }
+    }
   ],
-  "contact": {},
-  "license": "unlicense",
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/image-world-generator",
+    "sources": "https://github.com/28Pollux28/ImageWorldGenerator",
+    "issues": "https://github.com/28Pollux28/ImageWorldGenerator/issues"
+  },
+  "license": "LGPL-3.0",
   "icon": "assets/savemypiglin/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "eu.pollux28.savemypiglin.Savemypiglin"
+      "eu.pollux28.savemypiglin.SaveMyPiglin"
     ]
   },
   "mixins": [
@@ -22,6 +31,6 @@
   "depends": {
     "fabricloader": ">=0.11.6",
     "fabric": "*",
-    "minecraft": "1.17"
+    "minecraft": "~1.17"
   }
 }
